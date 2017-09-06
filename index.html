@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hangman</title>
+	<link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+	<h1>Hangman<br>
+	  Choose your difficulty</h1>
+	<form name="difficultyForm">
+		<button name="Easy" type="button" id="Easy" value="Easy" onClick="startLevel(id)">Easy</button>
+		<button name="Medium" type="button" id="Medium" value="Medium" onClick="startLevel(id)">Medium</button>
+		<button name="Hard" type="button" id="Hard" value="Hard" onClick="startLevel(id)">Hard</button>
+	</form>  
+
+<script type="text/javascript">
+	function startLevel(id) {
+  window.location = 'app/game.html?id=' + id;
+}
+</script>
+</body>
+</html>

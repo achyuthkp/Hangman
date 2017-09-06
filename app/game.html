@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hangman</title>
+	<script type="text/javascript" src="../script/game.js"></script>
+	<link rel="stylesheet" href="../style/styles.css">
+</head>
+<body>
+	<h1>Hangman</h1>
+	<button onclick="displayHint()">Hint</button>
+	<p id="hint"></p>
+	<p id="guessfield"></p>
+	<form name="checkForm">
+	<input name="checkguessLetter" type="text" size="5" maxlength="1">
+	<input name="checkbutton" type="button" value="Guess" onClick="checkLetter()">
+
+	<p id="wrongLetters">Wrong Letters:</p>
+	<p id="error">Errors:</p>
+	<input name="refresh" type="button" value="New Game" id="newGame">
+	</form>
+
+	<script type="text/javascript">
+		document.getElementById("newGame").onclick = function () {
+        location.href = "../index.html";
+    	};
+	</script>
+</body>
+</html>
